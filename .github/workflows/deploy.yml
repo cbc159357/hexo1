@@ -14,12 +14,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: false  # 禁用子模块检查
-
+#检查node版本
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '22'
-
+#安装依赖
       - name: Install Dependencies
         run: npm install
 
@@ -27,17 +27,17 @@ jobs:
         run: |
           npm install hexo-deployer-git --save
           npm install hexo-cli -g
-
+#清理缓存和生成静态网站文件
       - name: Clean and Generate Static Files
         run: |
           hexo clean
           hexo generate
-
+#明确提交用户信息:这样配置的目的通常是为了在自动化部署过程中，确保提交有明确的用户信息标识，同时也方便在查看提交历史等情况下区分是自动化操作而不是人工操作产生的提交。
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
+          git config --global user.email 'githsub-actions[bot]@users.noreply.github.com'
+#GitHub Pages部署,同时添加缓存到gh-pages -f
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

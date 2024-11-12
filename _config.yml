@@ -83,7 +83,7 @@ ignore: null
 theme: butterfly
 deploy:
   type: git
-  repo: https://github.com/cbc159357/hexo.git
+  repo: https://github.com/cbc159357/hexo1.git
   branch: gh-pages
 
 

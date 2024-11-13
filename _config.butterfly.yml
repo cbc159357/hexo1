@@ -79,10 +79,10 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: img/1.jpeg
+default_top_img: /img/1.jpeg
 
 # The banner image of index page
-index_img: /img/1.jpeg
+index_img: img/1.jpeg
 
 # The banner image of archive page 存档图片
 archive_img:

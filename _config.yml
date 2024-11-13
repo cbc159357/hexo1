@@ -8,8 +8,8 @@ timezone: ''
 
 
 
-url: https://cbc159357.github.io/hexo
-root: /hexo/
+url: https://cbc159357.github.io/hexo1
+root: /hexo1/
 #url: http://example.com
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -83,7 +83,7 @@ ignore: null
 theme: butterfly
 deploy:
   type: git
-  repo: https://github.com/cbc159357/hexo.git
+  repo: https://github.com/cbc159357/hexo1.git
   branch: gh-pages
 
 
